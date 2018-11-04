@@ -13,6 +13,8 @@
 * [English书籍](#english书籍)
 	* [DB](#db)
 		* [MySQL_High_Availability.pdf](#mysql_high_availabilitypdf)
+	* [Design Patterns](#design-patterns)
+		* [Design Patterns, Elements of Reusable Object-Oriented Software.pdf](#design-patterns-elements-of-reusable-object-oriented-softwarepdf)
 	* [Editor](#editor)
 		* [Practical.Vim.2nd.Edition.2015.10.pdf](#practicalvim2ndedition201510pdf)
 	* [Java](#java)
@@ -32,6 +34,7 @@
 		* [Effective Java中文版（第2版）.pdf](#effective-java中文版第2版pdf)
 		* [Java并发编程实战(带目录).pdf](#java并发编程实战带目录pdf)
 		* [Java并发编程实战（中文版）.pdf](#java并发编程实战中文版pdf)
+		* [Java多线程编程核心技术.pdf](#java多线程编程核心技术pdf)
 		* [Java编程思想(第4版)（带目录书签）.pdf](#java编程思想第4版带目录书签pdf)
 		* [Netty实战.pdf](#netty实战pdf)
 		* [Spring Cloud微服务实战.pdf](#spring-cloud微服务实战pdf)
@@ -39,7 +42,6 @@
 		* [《深入理解Java虚拟机：JVM高级特性与最佳实践》.pdf](#深入理解java虚拟机jvm高级特性与最佳实践pdf)
 		* [大型网站技术架构：核心原理与案例分析+李智慧.pdf](#大型网站技术架构核心原理与案例分析李智慧pdf)
 		* [深入剖析Tomcat.pdf](#深入剖析tomcatpdf)
-		* [设计模式之禅（第2版）-5.pdf](#设计模式之禅第2版-5pdf)
 		* [重构：改善既有代码的设计.pdf](#重构改善既有代码的设计pdf)
 		* [阿里巴巴Java开发手册（详尽版）.pdf](#阿里巴巴java开发手册详尽版pdf)
 	* [Linux](#linux)
@@ -47,6 +49,9 @@
 		* [鸟哥的Linux私房菜-基础篇.第四版.pdf](#鸟哥的linux私房菜-基础篇第四版pdf)
 	* [Redis](#redis)
 		* [Redis开发与运维.pdf](#redis开发与运维pdf)
+	* [设计模式](#设计模式)
+		* [设计模式_可复用面向对象软件的基础.pdf](#设计模式_可复用面向对象软件的基础pdf)
+		* [设计模式之禅（第2版）.pdf](#设计模式之禅第2版pdf)
 
 <!-- vim-markdown-toc -->
 
@@ -65,6 +70,9 @@
 
 ### DB
 #### MySQL_High_Availability.pdf
+
+### Design Patterns
+#### Design Patterns, Elements of Reusable Object-Oriented Software.pdf
 
 ### Editor
 #### Practical.Vim.2nd.Edition.2015.10.pdf
@@ -91,6 +99,7 @@
 #### Effective Java中文版（第2版）.pdf
 #### Java并发编程实战(带目录).pdf
 #### Java并发编程实战（中文版）.pdf
+#### Java多线程编程核心技术.pdf
 #### Java编程思想(第4版)（带目录书签）.pdf
 #### Netty实战.pdf
 #### Spring Cloud微服务实战.pdf
@@ -98,7 +107,6 @@
 #### 《深入理解Java虚拟机：JVM高级特性与最佳实践》.pdf
 #### 大型网站技术架构：核心原理与案例分析+李智慧.pdf
 #### 深入剖析Tomcat.pdf
-#### 设计模式之禅（第2版）-5.pdf
 #### 重构：改善既有代码的设计.pdf
 #### 阿里巴巴Java开发手册（详尽版）.pdf
 
@@ -108,4 +116,8 @@
 
 ### Redis
 #### Redis开发与运维.pdf
+
+### 设计模式
+#### 设计模式_可复用面向对象软件的基础.pdf
+#### 设计模式之禅（第2版）.pdf
 -->
