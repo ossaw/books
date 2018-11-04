@@ -1,9 +1,9 @@
-### Table of content
+## Table of content
 <!-- vim-markdown-toc GFM -->
 
 * [Blog](#blog)
 	* [JDK之ThreadPoolExecutor源码分析.md](#jdk之threadpoolexecutor源码分析md)
-	* [JDK之ThreadPoolExecutor源码分析.md.pdf](#jdk之threadpoolexecutor源码分析mdpdf)
+	* [JDK之ThreadPoolExecutor源码分析.pdf](#jdk之threadpoolexecutor源码分析pdf)
 	* [自定义实现Java线程池1-模拟jdk线程池执行流程.md](#自定义实现java线程池1-模拟jdk线程池执行流程md)
 	* [自定义实现Java线程池1-模拟jdk线程池执行流程.pdf](#自定义实现java线程池1-模拟jdk线程池执行流程pdf)
 	* [自定义实现Java线程池2-完善异常处理和去除同步.md](#自定义实现java线程池2-完善异常处理和去除同步md)
@@ -53,7 +53,7 @@
 <!-- 
 ## Blog
 ### JDK之ThreadPoolExecutor源码分析.md
-### JDK之ThreadPoolExecutor源码分析.md.pdf
+### JDK之ThreadPoolExecutor源码分析.pdf
 ### 自定义实现Java线程池1-模拟jdk线程池执行流程.md
 ### 自定义实现Java线程池1-模拟jdk线程池执行流程.pdf
 ### 自定义实现Java线程池2-完善异常处理和去除同步.md
