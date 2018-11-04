@@ -1,16 +1,13 @@
-## Table of content
+## Table of content 
+
 <!-- vim-markdown-toc GFM -->
 
 * [Blog](#blog)
-	* [JDKÖ®ThreadPoolExecutorÔ´Âë·ÖÎö.md](#jdkÖ®threadpoolexecutorÔ´Âë·ÖÎömd)
-	* [JDKÖ®ThreadPoolExecutorÔ´Âë·ÖÎö.pdf](#jdkÖ®threadpoolexecutorÔ´Âë·ÖÎöpdf)
-	* [×Ô¶¨ÒåÊµÏÖJavaÏß³Ì³Ø1-Ä£ÄâjdkÏß³Ì³ØÖ´ÐÐÁ÷³Ì.md](#×Ô¶¨ÒåÊµÏÖjavaÏß³Ì³Ø1-Ä£ÄâjdkÏß³Ì³ØÖ´ÐÐÁ÷³Ìmd)
-	* [×Ô¶¨ÒåÊµÏÖJavaÏß³Ì³Ø1-Ä£ÄâjdkÏß³Ì³ØÖ´ÐÐÁ÷³Ì.pdf](#×Ô¶¨ÒåÊµÏÖjavaÏß³Ì³Ø1-Ä£ÄâjdkÏß³Ì³ØÖ´ÐÐÁ÷³Ìpdf)
-	* [×Ô¶¨ÒåÊµÏÖJavaÏß³Ì³Ø2-ÍêÉÆÒì³£´¦ÀíºÍÈ¥³ýÍ¬²½.md](#×Ô¶¨ÒåÊµÏÖjavaÏß³Ì³Ø2-ÍêÉÆÒì³£´¦ÀíºÍÈ¥³ýÍ¬²½md)
-	* [×Ô¶¨ÒåÊµÏÖJavaÏß³Ì³Ø2-ÍêÉÆÒì³£´¦ÀíºÍÈ¥³ýÍ¬²½.pdf](#×Ô¶¨ÒåÊµÏÖjavaÏß³Ì³Ø2-ÍêÉÆÒì³£´¦ÀíºÍÈ¥³ýÍ¬²½pdf)
-	* [¼ÆËã¶àÏß³Ì»·¾³ÏÂÖ´ÐÐÈÎÎñÊ±¼ä.md](#¼ÆËã¶àÏß³Ì»·¾³ÏÂÖ´ÐÐÈÎÎñÊ±¼ämd)
-	* [¼ÆËã¶àÏß³Ì»·¾³ÏÂÖ´ÐÐÈÎÎñÊ±¼ä.pdf](#¼ÆËã¶àÏß³Ì»·¾³ÏÂÖ´ÐÐÈÎÎñÊ±¼äpdf)
-* [EnglishÊé¼®](#englishÊé¼®)
+	* [JDKä¹‹ThreadPoolExecutoræºç åˆ†æž.pdf](#jdkä¹‹threadpoolexecutoræºç åˆ†æžpdf)
+	* [è‡ªå®šä¹‰å®žçŽ°Javaçº¿ç¨‹æ± 1-æ¨¡æ‹Ÿjdkçº¿ç¨‹æ± æ‰§è¡Œæµç¨‹.pdf](#è‡ªå®šä¹‰å®žçŽ°javaçº¿ç¨‹æ± 1-æ¨¡æ‹Ÿjdkçº¿ç¨‹æ± æ‰§è¡Œæµç¨‹pdf)
+	* [è‡ªå®šä¹‰å®žçŽ°Javaçº¿ç¨‹æ± 2-å®Œå–„å¼‚å¸¸å¤„ç†å’ŒåŽ»é™¤åŒæ­¥.pdf](#è‡ªå®šä¹‰å®žçŽ°javaçº¿ç¨‹æ± 2-å®Œå–„å¼‚å¸¸å¤„ç†å’ŒåŽ»é™¤åŒæ­¥pdf)
+	* [è®¡ç®—å¤šçº¿ç¨‹çŽ¯å¢ƒä¸‹æ‰§è¡Œä»»åŠ¡æ—¶é—´.pdf](#è®¡ç®—å¤šçº¿ç¨‹çŽ¯å¢ƒä¸‹æ‰§è¡Œä»»åŠ¡æ—¶é—´pdf)
+* [Englishä¹¦ç±](#englishä¹¦ç±)
 	* [DB](#db)
 		* [MySQL_High_Availability.pdf](#mysql_high_availabilitypdf)
 	* [Design Patterns](#design-patterns)
@@ -25,99 +22,109 @@
 		* [Thinking In Java 4th Edition.pdf](#thinking-in-java-4th-editionpdf)
 * [PDF Reader](#pdf-reader)
 	* [SumatraPDF-3.1.2-64.zip](#sumatrapdf-312-64zip)
-* [ÖÐÎÄÊé¼®](#ÖÐÎÄÊé¼®)
+* [ä¸­æ–‡ä¹¦ç±](#ä¸­æ–‡ä¹¦ç±)
 	* [DB](#db-1)
-	* [¸ßÐÔÄÜMySqlµÚÈý°æ.pdf](#¸ßÐÔÄÜmysqlµÚÈý°æpdf)
+		* [é«˜æ€§èƒ½MySqlç¬¬ä¸‰ç‰ˆ.pdf](#é«˜æ€§èƒ½mysqlç¬¬ä¸‰ç‰ˆpdf)
 	* [Editor](#editor-1)
-		* [VimÖÐÎÄÊ¹ÓÃ½Ì³Ì.pdf](#vimÖÐÎÄÊ¹ÓÃ½Ì³Ìpdf)
+		* [Vimä¸­æ–‡ä½¿ç”¨æ•™ç¨‹.pdf](#vimä¸­æ–‡ä½¿ç”¨æ•™ç¨‹pdf)
 	* [Java](#java-1)
-		* [Effective JavaÖÐÎÄ°æ£¨µÚ2°æ£©.pdf](#effective-javaÖÐÎÄ°æµÚ2°æpdf)
-		* [Java²¢·¢±à³ÌÊµÕ½(´øÄ¿Â¼).pdf](#java²¢·¢±à³ÌÊµÕ½´øÄ¿Â¼pdf)
-		* [Java²¢·¢±à³ÌÊµÕ½£¨ÖÐÎÄ°æ£©.pdf](#java²¢·¢±à³ÌÊµÕ½ÖÐÎÄ°æpdf)
-		* [Java¶àÏß³Ì±à³ÌºËÐÄ¼¼Êõ.pdf](#java¶àÏß³Ì±à³ÌºËÐÄ¼¼Êõpdf)
-		* [Java±à³ÌË¼Ïë(µÚ4°æ)£¨´øÄ¿Â¼ÊéÇ©£©.pdf](#java±à³ÌË¼ÏëµÚ4°æ´øÄ¿Â¼ÊéÇ©pdf)
-		* [NettyÊµÕ½.pdf](#nettyÊµÕ½pdf)
-		* [Spring CloudÎ¢·þÎñÊµÕ½.pdf](#spring-cloudÎ¢·þÎñÊµÕ½pdf)
-		* [Spring¼¼ÊõÄÚÄ»£¨µÚ¶þ°æ£©.pdf](#spring¼¼ÊõÄÚÄ»µÚ¶þ°æpdf)
-		* [¡¶ÉîÈëÀí½âJavaÐéÄâ»ú£ºJVM¸ß¼¶ÌØÐÔÓë×î¼ÑÊµ¼ù¡·.pdf](#ÉîÈëÀí½âjavaÐéÄâ»újvm¸ß¼¶ÌØÐÔÓë×î¼ÑÊµ¼ùpdf)
-		* [´óÐÍÍøÕ¾¼¼Êõ¼Ü¹¹£ººËÐÄÔ­ÀíÓë°¸Àý·ÖÎö+ÀîÖÇ»Û.pdf](#´óÐÍÍøÕ¾¼¼Êõ¼Ü¹¹ºËÐÄÔ­ÀíÓë°¸Àý·ÖÎöÀîÖÇ»Ûpdf)
-		* [ÉîÈëÆÊÎöTomcat.pdf](#ÉîÈëÆÊÎötomcatpdf)
-		* [ÖØ¹¹£º¸ÄÉÆ¼ÈÓÐ´úÂëµÄÉè¼Æ.pdf](#ÖØ¹¹¸ÄÉÆ¼ÈÓÐ´úÂëµÄÉè¼Æpdf)
-		* [°¢Àï°Í°ÍJava¿ª·¢ÊÖ²á£¨Ïê¾¡°æ£©.pdf](#°¢Àï°Í°Íjava¿ª·¢ÊÖ²áÏê¾¡°æpdf)
+		* [Effective Javaä¸­æ–‡ç‰ˆï¼ˆç¬¬2ç‰ˆï¼‰.pdf](#effective-javaä¸­æ–‡ç‰ˆç¬¬2ç‰ˆpdf)
+		* [Javaå¤šçº¿ç¨‹ç¼–ç¨‹æ ¸å¿ƒæŠ€æœ¯.pdf](#javaå¤šçº¿ç¨‹ç¼–ç¨‹æ ¸å¿ƒæŠ€æœ¯pdf)
+		* [Javaå¹¶å‘ç¼–ç¨‹å®žæˆ˜(å¸¦ç›®å½•).pdf](#javaå¹¶å‘ç¼–ç¨‹å®žæˆ˜å¸¦ç›®å½•pdf)
+		* [Javaå¹¶å‘ç¼–ç¨‹å®žæˆ˜ï¼ˆä¸­æ–‡ç‰ˆï¼‰.pdf](#javaå¹¶å‘ç¼–ç¨‹å®žæˆ˜ä¸­æ–‡ç‰ˆpdf)
+		* [Javaç¼–ç¨‹æ€æƒ³(ç¬¬4ç‰ˆ)ï¼ˆå¸¦ç›®å½•ä¹¦ç­¾ï¼‰.pdf](#javaç¼–ç¨‹æ€æƒ³ç¬¬4ç‰ˆå¸¦ç›®å½•ä¹¦ç­¾pdf)
+		* [Nettyå®žæˆ˜.pdf](#nettyå®žæˆ˜pdf)
+		* [Spring Cloudå¾®æœåŠ¡å®žæˆ˜.pdf](#spring-cloudå¾®æœåŠ¡å®žæˆ˜pdf)
+		* [Springå®žæˆ˜ï¼ˆç¬¬4ç‰ˆï¼‰.pdf](#springå®žæˆ˜ç¬¬4ç‰ˆpdf)
+		* [SpringæŠ€æœ¯å†…å¹•ï¼ˆç¬¬äºŒç‰ˆï¼‰.pdf](#springæŠ€æœ¯å†…å¹•ç¬¬äºŒç‰ˆpdf)
+		* [ã€Šæ·±å…¥ç†è§£Javaè™šæ‹Ÿæœºï¼šJVMé«˜çº§ç‰¹æ€§ä¸Žæœ€ä½³å®žè·µã€‹.pdf](#æ·±å…¥ç†è§£javaè™šæ‹Ÿæœºjvmé«˜çº§ç‰¹æ€§ä¸Žæœ€ä½³å®žè·µpdf)
+		* [å¤§åž‹ç½‘ç«™æŠ€æœ¯æž¶æž„ï¼šæ ¸å¿ƒåŽŸç†ä¸Žæ¡ˆä¾‹åˆ†æž+æŽæ™ºæ…§.pdf](#å¤§åž‹ç½‘ç«™æŠ€æœ¯æž¶æž„æ ¸å¿ƒåŽŸç†ä¸Žæ¡ˆä¾‹åˆ†æžæŽæ™ºæ…§pdf)
+		* [æ·±å…¥å‰–æžTomcat.pdf](#æ·±å…¥å‰–æžtomcatpdf)
+		* [é‡æž„ï¼šæ”¹å–„æ—¢æœ‰ä»£ç çš„è®¾è®¡.pdf](#é‡æž„æ”¹å–„æ—¢æœ‰ä»£ç çš„è®¾è®¡pdf)
+		* [é˜¿é‡Œå·´å·´Javaå¼€å‘æ‰‹å†Œï¼ˆè¯¦å°½ç‰ˆï¼‰.pdf](#é˜¿é‡Œå·´å·´javaå¼€å‘æ‰‹å†Œè¯¦å°½ç‰ˆpdf)
 	* [Linux](#linux)
 		* [vbird-linux-basic-4e.pdf](#vbird-linux-basic-4epdf)
-		* [Äñ¸çµÄLinuxË½·¿²Ë-»ù´¡Æª.µÚËÄ°æ.pdf](#Äñ¸çµÄlinuxË½·¿²Ë-»ù´¡ÆªµÚËÄ°æpdf)
+		* [é¸Ÿå“¥çš„Linuxç§æˆ¿èœ-åŸºç¡€ç¯‡.ç¬¬å››ç‰ˆ.pdf](#é¸Ÿå“¥çš„linuxç§æˆ¿èœ-åŸºç¡€ç¯‡ç¬¬å››ç‰ˆpdf)
 	* [Redis](#redis)
-		* [Redis¿ª·¢ÓëÔËÎ¬.pdf](#redis¿ª·¢ÓëÔËÎ¬pdf)
-	* [Éè¼ÆÄ£Ê½](#Éè¼ÆÄ£Ê½)
-		* [Éè¼ÆÄ£Ê½_¿É¸´ÓÃÃæÏò¶ÔÏóÈí¼þµÄ»ù´¡.pdf](#Éè¼ÆÄ£Ê½_¿É¸´ÓÃÃæÏò¶ÔÏóÈí¼þµÄ»ù´¡pdf)
-		* [Éè¼ÆÄ£Ê½Ö®ìø£¨µÚ2°æ£©.pdf](#Éè¼ÆÄ£Ê½Ö®ìøµÚ2°æpdf)
+		* [Rediså¼€å‘ä¸Žè¿ç»´.pdf](#rediså¼€å‘ä¸Žè¿ç»´pdf)
+	* [è®¾è®¡æ¨¡å¼](#è®¾è®¡æ¨¡å¼)
+		* [è®¾è®¡æ¨¡å¼_å¯å¤ç”¨é¢å‘å¯¹è±¡è½¯ä»¶çš„åŸºç¡€.pdf](#è®¾è®¡æ¨¡å¼_å¯å¤ç”¨é¢å‘å¯¹è±¡è½¯ä»¶çš„åŸºç¡€pdf)
+		* [è®¾è®¡æ¨¡å¼ä¹‹ç¦…ï¼ˆç¬¬2ç‰ˆï¼‰.pdf](#è®¾è®¡æ¨¡å¼ä¹‹ç¦…ç¬¬2ç‰ˆpdf)
 
 <!-- vim-markdown-toc -->
-
 <!-- 
 ## Blog
-### JDKÖ®ThreadPoolExecutorÔ´Âë·ÖÎö.md
-### JDKÖ®ThreadPoolExecutorÔ´Âë·ÖÎö.pdf
-### ×Ô¶¨ÒåÊµÏÖJavaÏß³Ì³Ø1-Ä£ÄâjdkÏß³Ì³ØÖ´ÐÐÁ÷³Ì.md
-### ×Ô¶¨ÒåÊµÏÖJavaÏß³Ì³Ø1-Ä£ÄâjdkÏß³Ì³ØÖ´ÐÐÁ÷³Ì.pdf
-### ×Ô¶¨ÒåÊµÏÖJavaÏß³Ì³Ø2-ÍêÉÆÒì³£´¦ÀíºÍÈ¥³ýÍ¬²½.md
-### ×Ô¶¨ÒåÊµÏÖJavaÏß³Ì³Ø2-ÍêÉÆÒì³£´¦ÀíºÍÈ¥³ýÍ¬²½.pdf
-### ¼ÆËã¶àÏß³Ì»·¾³ÏÂÖ´ÐÐÈÎÎñÊ±¼ä.md
-### ¼ÆËã¶àÏß³Ì»·¾³ÏÂÖ´ÐÐÈÎÎñÊ±¼ä.pdf
 
-## EnglishÊé¼®
+### JDKä¹‹ThreadPoolExecutoræºç åˆ†æž.pdf
+### è‡ªå®šä¹‰å®žçŽ°Javaçº¿ç¨‹æ± 1-æ¨¡æ‹Ÿjdkçº¿ç¨‹æ± æ‰§è¡Œæµç¨‹.pdf
+### è‡ªå®šä¹‰å®žçŽ°Javaçº¿ç¨‹æ± 2-å®Œå–„å¼‚å¸¸å¤„ç†å’ŒåŽ»é™¤åŒæ­¥.pdf
+### è®¡ç®—å¤šçº¿ç¨‹çŽ¯å¢ƒä¸‹æ‰§è¡Œä»»åŠ¡æ—¶é—´.pdf
+
+## Englishä¹¦ç±
 
 ### DB
+
 #### MySQL_High_Availability.pdf
 
 ### Design Patterns
+
 #### Design Patterns, Elements of Reusable Object-Oriented Software.pdf
 
 ### Editor
+
 #### Practical.Vim.2nd.Edition.2015.10.pdf
 
 ### Java
+
 #### Effective Java 1st Edition.pdf
 #### Effective Java 3rd Edition.pdf
 #### Java concurrency in practice.pdf
 #### Netty in Action.pdf
 #### Thinking In Java 4th Edition.pdf
 
+
 ## PDF Reader
+
 ### SumatraPDF-3.1.2-64.zip
 
-## ÖÐÎÄÊé¼®
+## ä¸­æ–‡ä¹¦ç±
 
 ### DB
-### ¸ßÐÔÄÜMySqlµÚÈý°æ.pdf
+
+#### é«˜æ€§èƒ½MySqlç¬¬ä¸‰ç‰ˆ.pdf
 
 ### Editor
-#### VimÖÐÎÄÊ¹ÓÃ½Ì³Ì.pdf
+
+#### Vimä¸­æ–‡ä½¿ç”¨æ•™ç¨‹.pdf
 
 ### Java
-#### Effective JavaÖÐÎÄ°æ£¨µÚ2°æ£©.pdf
-#### Java²¢·¢±à³ÌÊµÕ½(´øÄ¿Â¼).pdf
-#### Java²¢·¢±à³ÌÊµÕ½£¨ÖÐÎÄ°æ£©.pdf
-#### Java¶àÏß³Ì±à³ÌºËÐÄ¼¼Êõ.pdf
-#### Java±à³ÌË¼Ïë(µÚ4°æ)£¨´øÄ¿Â¼ÊéÇ©£©.pdf
-#### NettyÊµÕ½.pdf
-#### Spring CloudÎ¢·þÎñÊµÕ½.pdf
-#### Spring¼¼ÊõÄÚÄ»£¨µÚ¶þ°æ£©.pdf
-#### ¡¶ÉîÈëÀí½âJavaÐéÄâ»ú£ºJVM¸ß¼¶ÌØÐÔÓë×î¼ÑÊµ¼ù¡·.pdf
-#### ´óÐÍÍøÕ¾¼¼Êõ¼Ü¹¹£ººËÐÄÔ­ÀíÓë°¸Àý·ÖÎö+ÀîÖÇ»Û.pdf
-#### ÉîÈëÆÊÎöTomcat.pdf
-#### ÖØ¹¹£º¸ÄÉÆ¼ÈÓÐ´úÂëµÄÉè¼Æ.pdf
-#### °¢Àï°Í°ÍJava¿ª·¢ÊÖ²á£¨Ïê¾¡°æ£©.pdf
+
+#### Effective Javaä¸­æ–‡ç‰ˆï¼ˆç¬¬2ç‰ˆï¼‰.pdf
+#### Javaå¤šçº¿ç¨‹ç¼–ç¨‹æ ¸å¿ƒæŠ€æœ¯.pdf
+#### Javaå¹¶å‘ç¼–ç¨‹å®žæˆ˜(å¸¦ç›®å½•).pdf
+#### Javaå¹¶å‘ç¼–ç¨‹å®žæˆ˜ï¼ˆä¸­æ–‡ç‰ˆï¼‰.pdf
+#### Javaç¼–ç¨‹æ€æƒ³(ç¬¬4ç‰ˆ)ï¼ˆå¸¦ç›®å½•ä¹¦ç­¾ï¼‰.pdf
+#### Nettyå®žæˆ˜.pdf
+#### Spring Cloudå¾®æœåŠ¡å®žæˆ˜.pdf
+#### Springå®žæˆ˜ï¼ˆç¬¬4ç‰ˆï¼‰.pdf
+#### SpringæŠ€æœ¯å†…å¹•ï¼ˆç¬¬äºŒç‰ˆï¼‰.pdf
+#### ã€Šæ·±å…¥ç†è§£Javaè™šæ‹Ÿæœºï¼šJVMé«˜çº§ç‰¹æ€§ä¸Žæœ€ä½³å®žè·µã€‹.pdf
+#### å¤§åž‹ç½‘ç«™æŠ€æœ¯æž¶æž„ï¼šæ ¸å¿ƒåŽŸç†ä¸Žæ¡ˆä¾‹åˆ†æž+æŽæ™ºæ…§.pdf
+#### æ·±å…¥å‰–æžTomcat.pdf
+#### é‡æž„ï¼šæ”¹å–„æ—¢æœ‰ä»£ç çš„è®¾è®¡.pdf
+#### é˜¿é‡Œå·´å·´Javaå¼€å‘æ‰‹å†Œï¼ˆè¯¦å°½ç‰ˆï¼‰.pdf
 
 ### Linux
+
 #### vbird-linux-basic-4e.pdf
-#### Äñ¸çµÄLinuxË½·¿²Ë-»ù´¡Æª.µÚËÄ°æ.pdf
+#### é¸Ÿå“¥çš„Linuxç§æˆ¿èœ-åŸºç¡€ç¯‡.ç¬¬å››ç‰ˆ.pdf
 
 ### Redis
-#### Redis¿ª·¢ÓëÔËÎ¬.pdf
 
-### Éè¼ÆÄ£Ê½
-#### Éè¼ÆÄ£Ê½_¿É¸´ÓÃÃæÏò¶ÔÏóÈí¼þµÄ»ù´¡.pdf
-#### Éè¼ÆÄ£Ê½Ö®ìø£¨µÚ2°æ£©.pdf
+#### Rediså¼€å‘ä¸Žè¿ç»´.pdf
+
+### è®¾è®¡æ¨¡å¼
+
+#### è®¾è®¡æ¨¡å¼_å¯å¤ç”¨é¢å‘å¯¹è±¡è½¯ä»¶çš„åŸºç¡€.pdf
+#### è®¾è®¡æ¨¡å¼ä¹‹ç¦…ï¼ˆç¬¬2ç‰ˆï¼‰.pdf
 -->
