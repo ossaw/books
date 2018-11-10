@@ -33,6 +33,7 @@
 		* [Java并发编程实战(带目录).pdf](#java并发编程实战带目录pdf)
 		* [Java并发编程实战（中文版）.pdf](#java并发编程实战中文版pdf)
 		* [Java编程思想(第4版)（带目录书签）.pdf](#java编程思想第4版带目录书签pdf)
+		* [Java虚拟机规范（JavaSE7）.pdf](#java虚拟机规范javase7pdf)
 		* [Netty实战.pdf](#netty实战pdf)
 		* [Spring Cloud微服务实战.pdf](#spring-cloud微服务实战pdf)
 		* [Spring实战（第4版）.pdf](#spring实战第4版pdf)
@@ -104,6 +105,7 @@
 #### Java并发编程实战(带目录).pdf
 #### Java并发编程实战（中文版）.pdf
 #### Java编程思想(第4版)（带目录书签）.pdf
+#### Java虚拟机规范（JavaSE7）.pdf
 #### Netty实战.pdf
 #### Spring Cloud微服务实战.pdf
 #### Spring实战（第4版）.pdf
