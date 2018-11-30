@@ -3,7 +3,6 @@
 
 ## Table of content (目录仅作展示,链接暂未提供)
 
-
 <!-- vim-markdown-toc GFM -->
 
 * [Blog](#blog)
@@ -43,9 +42,10 @@
 		* [Effective Java中文版（第2版）.pdf](#effective-java中文版第2版pdf)
 		* [How Tomcat Works.pdf](#how-tomcat-workspdf-1)
 		* [Java 8实战.pdf](#java-8实战pdf)
+		* [Java concurrent in practice.pdf](#java-concurrent-in-practicepdf)
 		* [Java多线程编程核心技术.pdf](#java多线程编程核心技术pdf)
-		* [Java并发编程实战(带目录).pdf](#java并发编程实战带目录pdf)
-		* [Java并发编程实战（中文版）.pdf](#java并发编程实战中文版pdf)
+		* [Java并发编程实战.pdf](#java并发编程实战pdf)
+		* [Java并发编程的艺术.pdf](#java并发编程的艺术pdf)
 		* [Java编程思想(第4版)（带目录书签）.pdf](#java编程思想第4版带目录书签pdf)
 		* [Java虚拟机规范（JavaSE7）.pdf](#java虚拟机规范javase7pdf)
 		* [Netty实战.pdf](#netty实战pdf)
@@ -67,15 +67,10 @@
 		* [Head First设计模式.pdf](#head-first设计模式pdf)
 		* [设计模式_可复用面向对象软件的基础.pdf](#设计模式_可复用面向对象软件的基础pdf)
 		* [设计模式之禅（第2版）.pdf](#设计模式之禅第2版pdf)
-		* [JDK之ThreadPoolExecutor源码分析.pdf](#jdk之threadpoolexecutor源码分析pdf-1)
-		* [线程池增加监控.pdf](#线程池增加监控pdf-1)
-		* [自定义实现Java线程池1-模拟jdk线程池执行流程.pdf](#自定义实现java线程池1-模拟jdk线程池执行流程pdf-1)
-		* [自定义实现Java线程池2-完善异常处理和去除同步.pdf](#自定义实现java线程池2-完善异常处理和去除同步pdf-1)
-		* [计算多线程环境下执行任务时间.pdf](#计算多线程环境下执行任务时间pdf-1)
 
 <!-- vim-markdown-toc -->
-<!--
 
+<!--
 ## Blog
 
 ### JDK之ThreadPoolExecutor源码分析.pdf
@@ -137,9 +132,10 @@
 #### Effective Java中文版（第2版）.pdf
 #### How Tomcat Works.pdf
 #### Java 8实战.pdf
+#### Java concurrent in practice.pdf
 #### Java多线程编程核心技术.pdf
-#### Java并发编程实战(带目录).pdf
-#### Java并发编程实战（中文版）.pdf
+#### Java并发编程实战.pdf
+#### Java并发编程的艺术.pdf
 #### Java编程思想(第4版)（带目录书签）.pdf
 #### Java虚拟机规范（JavaSE7）.pdf
 #### Netty实战.pdf
@@ -169,9 +165,4 @@
 #### Head First设计模式.pdf
 #### 设计模式_可复用面向对象软件的基础.pdf
 #### 设计模式之禅（第2版）.pdf
-#### JDK之ThreadPoolExecutor源码分析.pdf
-#### 线程池增加监控.pdf
-#### 自定义实现Java线程池1-模拟jdk线程池执行流程.pdf
-#### 自定义实现Java线程池2-完善异常处理和去除同步.pdf
-#### 计算多线程环境下执行任务时间.pdf
 -->
