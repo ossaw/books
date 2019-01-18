@@ -1,4 +1,4 @@
-#读书笔记#
+# 读书笔记
 《重构 改善既有代码的设计》
 
 本文github地址： 
@@ -22,14 +22,14 @@ tips：
 
 　　重构(动词):使用一系列重构方法，在不改变软件可观察可观察行为的前提下，调整其结构。
 　　
-##为何重构##
+## 为何重构
 1. 重构改进软件设计
 2. 重构使软件更容易理解
 3. 重构帮助找到Bug
 4. 重构提高编程速度
 
-##何时重构##
-###三次法则###
+## 何时重构
+### 三次法则
 第一次做某件事时只管去做；第二次做类似的事会产生反感，但无论如何还是可以去做；第三次再做类似的事，你就应该重构。
 
 tips：
@@ -40,7 +40,7 @@ tips：
 2. 修补错误时重构
 3. 复审代码时重构
 
-##第3章 代码的坏味道##
+## 第3章 代码的坏味道
 1. Duplicated Code 重复代码
 2. Long Method 过长函数
 3. Large Class 过大的类
@@ -65,19 +65,19 @@ tips：
 22. Comments 过多的注释
 
 
-##第6章 重新组织函数
+## 第6章 重新组织函数
 
-###6.1 Extract Method 提炼函数
+### 6.1 Extract Method 提炼函数
 
-###6.2 Inline Method 内联函数
+### 6.2 Inline Method 内联函数
 
-###6.3 Inline Temp 内联临时变量
+### 6.3 Inline Temp 内联临时变量
 
-###6.4 Replace Temp with Query 以查询取代临时变量
+### 6.4 Replace Temp with Query 以查询取代临时变量
 
-###6.5 Introduce Explaining Variable 引入解释性变量
+### 6.5 Introduce Explaining Variable 引入解释性变量
 
-###6.6 Split Temporary Variable 分解临时变量
+### 6.6 Split Temporary Variable 分解临时变量
 
 　　如果某一个临时变量被赋值超过一次，并且它<font color=red>既不是循环变量</font>，<font color=red>也不是用于搜集计算结果</font>，**则针对每次赋值，创造一个独立、对应的临时变量**。
 
@@ -89,7 +89,7 @@ tips：
 4. 编译，测试
 5. 逐次重复上述过程。每次都在声明处对临时变量改名，并修改下次赋值之前的引用点
 
-###6.7 Remove Assignments to Parameters 移除对参数的赋值
+### 6.7 Remove Assignments to Parameters 移除对参数的赋值
 
 做法：
 
@@ -98,7 +98,7 @@ tips：
 3. 修改赋值语句，使其改为对新建之临时变量赋值。
 4. 编译，测试。
 
-###6.8 Replace Method with Method Object 以函数对象取代函数
+### 6.8 Replace Method with Method Object 以函数对象取代函数
 　　如果一个函数中局部变量泛滥成灾，那么想分解这个函数是非常困难的。以**查询取代临时变量**可以助你减轻这个负担，但有时候你会发现根本无法拆解一个需要拆解的函数。这种情况下，你应该把手伸进工具箱的深处，祭出**函数对象**这件法宝。
 
 做法：
@@ -113,96 +113,96 @@ tips：
 
 　这项重构的好处是：我们可以轻松地对compute()函数采取Extract Method(提炼函数)，不必担心参数传递的问题。
 　
-###6.9 Substitute Algorithm 替换算法
+### 6.9 Substitute Algorithm 替换算法
 
 把某一个算法替换为另一个更清晰的算法。
 
-##第7章 在对象之间搬移特性
+## 第7章 在对象之间搬移特性
 
-###7.1 Move Method (搬移函数)
+### 7.1 Move Method (搬移函数)
 
 你的程序中，**有个函数**与其所驻类之外的另一个类进行更多交流：调用后者，或者被后者调用。
 
 思路：
 在该函数最常引用的类中建立一个有着类似行为的新函数。将旧函数变成一个单纯的委托函数，或是将旧函数完全移除。
 
-###7.2 Move Field （搬移字段）
+### 7.2 Move Field （搬移字段）
 
 你的程序中，**某个字段**被其所驻类之外的另一个类更多地用到。
 
 思路：在目标类新建一个字段，修改源字段的所有用户，令它们改用新字段。
 
-###7.3 Extract Class (提炼类)
+### 7.3 Extract Class (提炼类)
 
 某各类做了应该由两个类做的事。
 
 思路：建立一个新类，将相关的字段和函数从旧类搬移到新类。
 
-###7.4 Inline Class (将类内联化)
+### 7.4 Inline Class (将类内联化)
 
 某个类没有做太多事情。
 
 思路：将这个类的所有特性搬移到另一个类中，然后移除原类。
 
-###7.5 Hide Delegate (隐藏“委托关系”)
+### 7.5 Hide Delegate (隐藏“委托关系”)
 
 客户通过一个委托类来调用另一个对象。
 
 思路：在服务类上建立客户所需求的所有函数，用以隐藏委托关系。
 
-###7.6 Remove Middle Man (移除中间人)
+### 7.6 Remove Middle Man (移除中间人)
 
 某个类做了过多的简单委托动作。
 
 思路：让客户直接调用受托类。(和7.5刚好相反)
 
-###7.7 Introduce Foreign Method (引入外加函数)
+### 7.7 Introduce Foreign Method (引入外加函数)
 
 你需要为提供服务的类增加一个函数，但你无法修改这个类。
 
 思路：在客户类中建立一个函数，并以第一参数形式传入一个服务类实例。
 
-###7.8 Introduce Local Extension (引入本地扩展)
+### 7.8 Introduce Local Extension (引入本地扩展)
 
 你需要为服务类提供一些额外函数，但你无法修改这个类。
 
 思路：建立一个新类，使它包含这些额外函数。让这个扩展品成为源类的子类或包装类。
 
-##第8章 重新组织数据
+## 第8章 重新组织数据
 
-###8.1 Self Encapsulate Filed (自封装字段)
+### 8.1 Self Encapsulate Filed (自封装字段)
 将属性声明为private，使用get/set函数来访问。
-###8.2 Replace Data Value with Object (以对象取代数据值)
+### 8.2 Replace Data Value with Object (以对象取代数据值)
 
 你有一个数据项，需要与其他数据和行为一起使用才有意义。
 
 思路：将数据项变成对象。
 
-###8.3 Change Value to Reference (将值对象改为引用对象)
+### 8.3 Change Value to Reference (将值对象改为引用对象)
 
 你从一个类衍生出许多彼此相等的实例，希望将它们替换为同一个对象。
 
 思路：将这个值对象变成引用对象。
 
-###8.4 Change Reference to Value (将引用对象改为值对象)
+### 8.4 Change Reference to Value (将引用对象改为值对象)
 
 你有一个引用对象，很小且不可变，而且不易管理。
 
 思路：将它变成值对象。
 
-###8.5 Replace Array with Object (以对象取代数组)
+### 8.5 Replace Array with Object (以对象取代数组)
 
 你有一个数组，其中的元素各自代表不同的东西。
 
 思路：以对象替换数组，其中的数组中的每个元素，以一个字段来表示。
 
-###8.6 Duplicate Observed Data (复制“被监视数据”)
+### 8.6 Duplicate Observed Data (复制“被监视数据”)
 
 你有一些领域数据置身于GUI控件中，而领域函数需要访问这些数据。
 
 思路：将该数据复制到一个领域对象中。建立一个Observer模式，用以同步领域对象和GUI对象内的重要数据。
 
-###8.7 Change Unidirectional Association to Bidirectional (将单向关联改为双向关联)
+### 8.7 Change Unidirectional Association to Bidirectional (将单向关联改为双向关联)
 
 两个类都需要使用双方特性，但其间只有一条单向连接。
 
@@ -210,13 +210,13 @@ tips：
 
 
 
-###8.8 Change Bidirectional Association to Unidirectional (将双向关联改为单向关联)
+### 8.8 Change Bidirectional Association to Unidirectional (将双向关联改为单向关联)
 
 两个类之间有双向关联，但其中一个类如今不再需要另一个类的特性。
 
 思路：去除不必要的关联。
 
-###8.9 Replace Magic Number with Symbolic Constant (以字面常量取代魔法数)
+### 8.9 Replace Magic Number with Symbolic Constant (以字面常量取代魔法数)
 
 你有一个字面数值，带有特别含义。
 
@@ -224,13 +224,13 @@ tips：
 
 eg. 使用PI来代替3.14
 
-###8.10 Encapsulate Field （封装字段）
+### 8.10 Encapsulate Field （封装字段）
 
 你的类中存在一个 public 字段。
 
 思路：将它声明为 private， 并提供相应的访问函数。
 
-###8.11 Encapsulate Collection (封装集合)
+### 8.11 Encapsulate Collection (封装集合)
 
 有一个函数返回一个集合。
 
@@ -246,31 +246,31 @@ eg. 使用PI来代替3.14
 
 如果你做到以上几点，集合就可以很好地封装起来了，这便可以降低集合拥有者和用户之间的耦合度。
 
-###8.12 Replace Record with Data Class (以数据类取代记录)
+### 8.12 Replace Record with Data Class (以数据类取代记录)
 
 你需要面对传统编程环境中的记录结构。
 
 思路：**为该记录创建一个“哑”数据对象**。
 
-###8.13 Replace Type Code with Class (以类取代类型码)
+### 8.13 Replace Type Code with Class (以类取代类型码)
 
 类之中有一个数值类型码，但它并不影响类的行为。
 
 思路:**以一个新的类替换该数值类型码**。
 
-###8.14 Replace Type Code with Subclasses (以子类取代类型码)
+### 8.14 Replace Type Code with Subclasses (以子类取代类型码)
 
 你有一个<font color=red>不可变</font>的类型码，它会影响类的行为。
 
 思路：**以子类取代这个类型码**。
 
-###8.15 Replace Type Code with State/Strategy (以 State/Strategy 取代类型码)
+### 8.15 Replace Type Code with State/Strategy (以 State/Strategy 取代类型码)
 
 你有一个类型码，它会影响类的行为，但你无法通过集成手法消除它。
 
 思路：**以状态对象取代类型码**。
 
-###8.16 Replace Subclass with Fields (以字段取代子类)
+### 8.16 Replace Subclass with Fields (以字段取代子类)
 
 你的各个子类的唯一差别只在“返回常量数据”的函数身上。
 
@@ -283,9 +283,9 @@ eg. 使用PI来代替3.14
 尽管常量函数有其用途，但若子类只有常量函数，实在没有足够的存在价值。你可以在超类中设计一个与常量函数返回值相应的字段，从而完全去除这样的子类。如此一来就可以避免因继承而带来的额外复杂性。
 
 
-##第9章 简化条件表达式
+## 第9章 简化条件表达式
 
-###9.1 Decompose Conditional (分解条件表达式)
+### 9.1 Decompose Conditional (分解条件表达式)
 
 你有一个复杂的条件 (if-then-else) 语句。
 
@@ -302,7 +302,7 @@ eg. 使用PI来代替3.14
 - 将 if 段落提炼出来，构成一个独立函数。
 - 将 then 段落和 else 段落都提炼出来，各自构成一个独立函数。
 
-###9.2 Consolidate Conditional Expression (合并条件表达式)
+### 9.2 Consolidate Conditional Expression (合并条件表达式)
 
 你有一系列条件测试，都得到相同结果。
 
@@ -316,7 +316,7 @@ eg. 使用PI来代替3.14
 
 条件语句的合并理由也同时指出了不要合并的理由：**如果你认为这些检查的确<font color=red>彼此独立</font>，的确不应该被视为同一次检查，那么就不要使用本项重构**。因为在这种情况下，你的代码已经很清楚表达出自己的意义。
 
-###9.3 Consolidate Duplicate Conditional Fragments (合并重复的条件片段)
+### 9.3 Consolidate Duplicate Conditional Fragments (合并重复的条件片段)
 
 在条件表达式的**每个分支**上有着相同的一段代码。
 
@@ -326,13 +326,13 @@ eg. 使用PI来代替3.14
 
 有时你会发现，一组条件表达式的所有分支都执行了相同的某段代码。如果是这样，你就应该将这段代码搬移到条件表达式外面。这样，代码才能更清楚地表明哪些东西随条件的变化而变化、哪些东西保持不变。
 
-###9.4 Remove Control Flag (移除控制标记)
+### 9.4 Remove Control Flag (移除控制标记)
 
 在一系列布尔表达式中，某个变量带有“控制标记”(control flag) 的作用。
 
 思路：**以 break 语句或 return 语句取代控制标记。**
 
-###9.5 Replace Nested Conditional with Guard Clauses (以卫语句取代嵌套条件表达式)
+### 9.5 Replace Nested Conditional with Guard Clauses (以卫语句取代嵌套条件表达式)
 
 函数中的条件逻辑使人难以看清正常的执行路径。
 
@@ -456,7 +456,7 @@ public double getAdjustedCapital() {
 }
 ```
 
-###9.6 Replace Conditional with Polymorphism (以多态取代条件表达式)
+### 9.6 Replace Conditional with Polymorphism (以多态取代条件表达式)
 
 你手上有个条件表达式，它根据对象类型的不同而选择不同的行为。
 
@@ -470,13 +470,13 @@ public double getAdjustedCapital() {
 
 多态能够给你带来很多好处。如果同一组条件表达式在程序许多地点出现，那么使用多态的收益是最大的。使用条件表达式时，如果你想添加一种新类型，就必须查找并更新所有条件表达式。但如果改用多态，只需建立一个新的子类，并在其中提供适当的函数就行了。类的用户不需要了解这个子类，这就大大降低了系统各部分之间的依赖，使系统升级更加容易。
 
-###9.7 Introduce Null Object (引入 Null 对象)
+### 9.7 Introduce Null Object (引入 Null 对象)
 
 你需要再三检查某对象是否为null。
 
 思路：**将null值替换为null对象**。
 
-###9.8 Introduce Assertion (引入断言)
+### 9.8 Introduce Assertion (引入断言)
 
 某一段代码需要对程序状态做出某种假设。
 
@@ -511,33 +511,33 @@ double getExpenseLimit() {
 断言可以作为交流与调试的辅助。在交流的角度上，断言可以帮助程序阅读者理解代码所做的假设；在调试的角度上，断言可以在距离bug最近的地方抓住它们。当我编写自我测试代码的时候发现，断言在调试方面的帮助变得不那么重要了，但我仍然非常看重它们在交流方面的价值。
 
 
-##第10章 简化函数调用
+## 第10章 简化函数调用
 
-###10.1 Rename Method (函数改名)
+### 10.1 Rename Method (函数改名)
 
 函数的名称未能揭示函数的用途。
 
 思路：**修改函数名称。**
 
-###10.2 Add Parameter (添加参数)
+### 10.2 Add Parameter (添加参数)
 
 某个函数需要从调用端得到更多信息。
 
 思路：**为此函数添加一个对象参数，让该对象带进函数所需信息。**
 
-###10.3 Remove Parameter (移除参数)
+### 10.3 Remove Parameter (移除参数)
 
 函数本体不再需要某个参数。
 
 思路：**将该参数去除。**
 
-###10.4 Separate Query from Modifier (将查询函数和修改函数分离)
+### 10.4 Separate Query from Modifier (将查询函数和修改函数分离)
 
 某个函数既返回对象状态值，又修改对象状态。
 
 思路：**建立两个不同的函数，其中一个负责查询，另一个负责修改。**
 
-###10.5 Parameterize Method (令函数携带参数)
+### 10.5 Parameterize Method (令函数携带参数)
 
 若干函数做了类似的工作，但在函数本体中却包含了不同的值。
 
@@ -573,7 +573,7 @@ void raise(double factor) {
 
 本项重构的要点在于：以“可将少量数值视为参数”为依据，找出带有重复性的代码。
 
-###10.6 Replace Rarameter with Explicit Methods (以明确函数取代参数)
+### 10.6 Replace Rarameter with Explicit Methods (以明确函数取代参数)
 
 你有一个函数，其中完全取决于参数值而采取**不同行为**。
 
@@ -624,7 +624,7 @@ Replace Parameter with Explicit Methods 恰恰相反于 Parameterize Method 。�
 - 编译，测试。
 - 所有调用端都修改完毕后，删除原函数。
 
-###10.7 Preserve Whole Object (保持对象完整)
+### 10.7 Preserve Whole Object (保持对象完整)
 
 你从某个对象中取出若干值，将它们作为某一次函数调用时的参数。
 
@@ -659,7 +659,7 @@ withinPlan = plan.withinRange(low, high);
 
 还有一种常见情况：调用者将自己的若干数据作为参数，传递给被调用函数。这种情况下，如果该对象有合适的取值函数，你可以使用**this**取代这些参数值，并且无需担心对象依赖问题。
 
-###10.8 Replace Parameter with Methods (以函数取代参数)
+### 10.8 Replace Parameter with Methods (以函数取代参数)
 
 对象调用某个函数，并将所得结果作为参数，传递给另一个函数。而接受该参数的函数本身也能够调用前一个函数。
 
@@ -684,7 +684,7 @@ double finalPrice = discountedPrice (basePrice);//在discountedPrice内部调用
 
 如果函数可以通过其他途径获得参数值，那么它就不应该通过**参数**取得该值。过长的参数列会增加程序阅读者的理解难度，因此我们应该尽可能缩短参数列的长度。
 
-###10.9 Introduce Parameter Object(引入参数对象)
+### 10.9 Introduce Parameter Object(引入参数对象)
 
 某些参数总是很自然地同时出现。
 
@@ -696,7 +696,7 @@ double finalPrice = discountedPrice (basePrice);//在discountedPrice内部调用
 
 本项重构还可以带给你更多好处。当你把这些参数组织到一起之后，往往很快可以发现一些可被移至新建类的行为。通常，原本使用那些参数的函数对这一组参数会有一些共通的处理，如果将这些共通行为移到新对象中，你可以减少很多重复代码。
 
-###10.10 Remove Setting Method (移除设值函数)
+### 10.10 Remove Setting Method (移除设值函数)
 
 类中的某个字段应该在对象创建时被设值，然后就不再改变。
 
@@ -708,7 +708,7 @@ double finalPrice = discountedPrice (basePrice);//在discountedPrice内部调用
 
 如果你保留了间接访问变量的方法，就可能疆场有程序员盲目使用它们。这些人甚至会在构造函数中使用设值函数！我猜想他们或许是为了代码的一致性，但却忽略了设值函数往后可能带来的混淆。
 
-###10.11 Hide Method (隐藏函数)
+### 10.11 Hide Method (隐藏函数)
 
 有一个函数，从来没有被其他任何类用到。
 
@@ -720,7 +720,7 @@ double finalPrice = discountedPrice (basePrice);//在discountedPrice内部调用
 
 一种特别常见的情况是：当你面对一个过于丰富、提供了过多行为的接口时，就值得将**非必要**的取值函数和设值函数隐藏起来。尤其当你面对的是一个只有简单封装的数据容器时，情况更是如此。随着越来越多行为被放入这个类，你会发现许多取值/设值函数不再需要公开，因此可以把它们隐藏起来。如果你把取值/设值函数设为private，然后在所有地方都直接访问变量，那就可一个放心移除取值/设值函数了。
 
-###10.12 Replace Constructor with Factory Method (以工厂函数取代构造函数)
+### 10.12 Replace Constructor with Factory Method (以工厂函数取代构造函数)
 
 你希望在创建对象时不仅仅是做简单的建构动作。
 
@@ -732,7 +732,7 @@ double finalPrice = discountedPrice (basePrice);//在discountedPrice内部调用
 
 此外，如果构造函数的功能不能满足你的需要，也可以使用工厂函数来代替它。工厂函数也是 Change Value to Reference 的基础。你也可以令你的工厂函数根据参数的个数和类型，选择不同的创建行为。
 
-###10.13 Encapsulate Downcast (封装向下转型)
+### 10.13 Encapsulate Downcast (封装向下转型)
 
 某个函数返回的对象，需要由函数调用者执行向下转型(downcast)。
 
@@ -754,7 +754,7 @@ Reading lastReading() {
 }
 ```
 
-###10.14 Replace Error Code with Exception (以异常取代错误码)
+### 10.14 Replace Error Code with Exception (以异常取代错误码)
 
 某个函数返回一个特定的代码，用以表示某种错误情况。
 
@@ -784,7 +784,7 @@ void withdraw(int amount) throws BalanceExceprion {
 }
 ```
 
-###10.15 Replace Exception with Test (以测试取代异常)
+### 10.15 Replace Exception with Test (以测试取代异常)
 
 面对一个调用者可以预先检查的条件，你抛出了一个异常。
 
@@ -813,21 +813,21 @@ double getValueForPeriod(int periodNumber) {
 }
 ```
 
-##第11章 处理概括关系
+## 第11章 处理概括关系
 
-###11.1 Pull Up Field (字段上移)
+### 11.1 Pull Up Field (字段上移)
 
 两个子类拥有相同的字段。
 
 思路：**将该字段移至超类。**
 
-###11.2 Pull Up Method (函数上移)
+### 11.2 Pull Up Method (函数上移)
 
 有些函数，在各个子类中产生完全相同的结果。
 
 思路：**将该函数移至超类。**
 
-###11.3 Pull Up Constructor Body (构造函数本体上移)
+### 11.3 Pull Up Constructor Body (构造函数本体上移)
 
 你在各个子类中拥有一些构造函数，它们的本体几乎完全一致。
 
@@ -853,72 +853,56 @@ public Manager(String name, String id, int grade) {
 }
 ```
 
-###11.4 Push Down Method (函数下移)
+### 11.4 Push Down Method (函数下移)
 
 超类中的某个函数只与部分(而非全部)子类有关。
 
 思路：**将这个函数移到相关的那些子类去。**
 
-###11.5 Push Down Field (字段下移)
+### 11.5 Push Down Field (字段下移)
 
 超类中的某个字段只被部分(而非全部)子类用到。
 
 思路：**将这个字段移到需要它的那些子类去。**
 
-###11.6 Extract Subclass (提炼子类)
+### 11.6 Extract Subclass (提炼子类)
 
 类中的某些特性只被某些 (而非全部)实例用到。
 
 思路：**新建一个子类，将上面所说的那一部分特性移到子类中。**
 
-###11.7 Extract Superclass (提炼超类)
+### 11.7 Extract Superclass (提炼超类)
 
 两个类有相似特性。
 
 思路：**为这两个类建立一个超类，将相同特性移至超类。**
 
-###11.8 Extract Interface (提炼接口)
+### 11.8 Extract Interface (提炼接口)
 
 若干客户使用类接口中的同一子集，或者两个类的接口有部分相同。
 
 思路：**将相同的子集提炼到一个独立接口中。**
 
-###11.9 Collapse Hierarchy (折叠继承体系)
+### 11.9 Collapse Hierarchy (折叠继承体系)
 
 超类和子类之间无太大区别。
 
 思路：**将它们合为一体。**
 
-###11.10 Form Template Method (塑造模板函数)
+### 11.10 Form Template Method (塑造模板函数)
 
 你有一些子类，其中相应的某些函数以相同顺序执行类似的操作，但各个操作的细节上有所不同。
 
 思路：**将这些操作分别放进独立函数中，并保持它们都有相同的签名，于是原函数也就变得相同了。然后将原函数上移至超类。**
 
-###11.11 Replace Inheritance with Delegation (以委托取代继承)
+### 11.11 Replace Inheritance with Delegation (以委托取代继承)
 
 某个子类只使用超类接口中的一部分，或是根本不需要继承而来的数据。
 
 思路：**在子类中新建一个字段用以保存超类；调整子类函数，令它改而委托超类；然后去掉两者之间的继承关系。**
 
-###11.12 Replace Delegation with Inheritance (以继承取代委托)
+### 11.12 Replace Delegation with Inheritance (以继承取代委托)
 
 你在两个类之间使用委托关系，并经常为整个接口编写许多极简单的委托函数。
 
 思路：**让委托类继承受托类。**
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
